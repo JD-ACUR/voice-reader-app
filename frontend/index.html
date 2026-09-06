@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversor de Texto a Audio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h1>🎙️ Texto a Audio</h1>
+    <p class="subtitulo">Pega el texto de tu clase y genera el audio en inglés</p>
+
+    <textarea
+      id="texto"
+      placeholder="Escribe o pega aquí el texto en inglés..."
+      rows="8"
+    ></textarea>
+
+    <div class="controles">
+      <div class="campo">
+        <label for="voz">Voz</label>
+        <select id="voz"></select>
+      </div>
+
+      <div class="campo">
+        <label for="velocidad">Velocidad: <span id="velocidad-valor">Normal</span></label>
+        <input type="range" id="velocidad" min="-50" max="50" value="0" step="10" />
+      </div>
+    </div>
+
+    <div class="botones">
+      <button id="btn-generar">Generar audio</button>
+      <button id="btn-guardar" disabled>Guardar como...</button>
+    </div>
+
+    <p id="mensaje"></p>
+
+    <audio id="reproductor" controls style="display:none;"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
