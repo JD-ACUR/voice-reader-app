@@ -24,6 +24,7 @@ VOCES_DISPONIBLES = {
     "Guy (Hombre adulto, EE.UU.)": {"voice": "en-US-GuyNeural", "pitch": "+0Hz"},
     "Ana (Niña, EE.UU.)": {"voice": "en-US-AnaNeural", "pitch": "+0Hz"},
     "Niño (simulado, EE.UU.)": {"voice": "en-US-GuyNeural", "pitch": "+75Hz"},
+#+75 sirve para que esa voz adquiero un tono parecido al de un infante
 }
 
 
@@ -68,10 +69,6 @@ class Api:
 
             self._last_audio_path = tmp_path
 
-            # El reproductor <audio> del navegador interno de pywebview no
-            # siempre puede reproducir rutas file:// locales por políticas
-            # de seguridad. Mandamos el audio como base64 (data URL) para
-            # que se reproduzca sin problema dentro de la ventana.
             with open(tmp_path, "rb") as f:
                 audio_b64 = base64.b64encode(f.read()).decode("utf-8")
 
