@@ -32,7 +32,7 @@ Este proyecto ofrece una alternativa **gratuita, sin anuncios y sin límites**, 
 - **HTML / CSS / JavaScript** — interfaz de usuario
 - **PyInstaller** — empaquetado de la app en un `.exe` ejecutable
 
-> ⚠️ **Nota:** aunque la app corre como programa de escritorio, `edge-tts` necesita conexión a internet para generar el audio (se comunica con los servidores de voz de Microsoft). No funciona en modo completamente offline.
+> **Nota:** aunque la app corre como programa de escritorio, `edge-tts` necesita conexión a internet para generar el audio (se comunica con los servidores de voz de Microsoft). No funciona en modo completamente offline.
 
 ## Estructura del proyecto
 
