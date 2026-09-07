@@ -1,4 +1,4 @@
-# 🎙️ Conversor de Texto a Audio
+# Conversor de Texto a Audio
 
 Aplicación de escritorio que convierte texto en inglés a audio, pensada originalmente para ayudar a una profesora de inglés a generar material de clase sin depender de conversores en línea de pago o con anuncios.
 
